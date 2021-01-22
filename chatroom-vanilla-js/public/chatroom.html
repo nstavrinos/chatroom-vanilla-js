@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Movie App</title>
+        <link rel="stylesheet" href="css/chatroom.css" />
+	</head>
+	
+    <body>
+      <nav>
+        <a href="index.jsp" class="logo">
+            <img src="img/PngItem_5335020.png"/>
+        </a>
+
+        <input type="checkbox" class="menu-btn" id="menu-btn"/>
+
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <!--menu-------------->
+        <ul class="menu">
+            <li><a href="http://localhost:8080/movie_new/index.jsp">Home</a></li>
+            <li><a href="http://localhost:8080/movie_new/profile.jsp">My List</a></li>
+            <li><a href="http://localhost:3000/chatroom.html">Chat Room</a></li>
+            <li><a href="http://localhost:8080/movie_new/news.jsp">News</a></li>
+            <li><a href="http://localhost:8080/movie_new/about_us.jsp">About Us</a></li>
+        </ul>
+        </nav>
+
+            <section class="msger">
+                <header class="msger-header">
+                  <div class="msger-header-title">
+                    <i class="fas fa-comment-alt"></i> Chat Room
+                  </div>
+                  <div class="msger-header-options">
+                    <span><i class="fas fa-cog"></i></span>
+                  </div>
+                </header>
+              
+                <main class="msger-chat">
+            
+                </main>
+              
+                <form id="msger-inputarea">
+                  <input id="msgerinput" type="text"  placeholder="Enter your message...">
+                  <button type="submit" class="msger-send-btn">Send</button>
+                </form>
+              </section>
+        
+        </body>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="chat.js"></script>
+        
+
+</html>	
